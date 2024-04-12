@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu&display=swap');
+* {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0%;
+    margin: 0%;  
+}   
+
+html {
+    font-size: 10px;
+    color: antiquewhite;
+}
+body {
+    background-color: black;
+    background-image: url(pexels-daniel-mišúr-9474172.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form button {
+    display: block;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color:black ;
+    text-transform: uppercase;
+    outline: none;
+    font-style:italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: 1.5s;
+}
+form a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.bn5 {
+    padding: 0.6em 2em;
+    /* border: none; */
+    outline: none;
+    color: rgb(255, 255, 255);
+    background:transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+
+
+
